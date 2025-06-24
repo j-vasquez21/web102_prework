@@ -111,7 +111,7 @@ function filterFundedOnly() {
   deleteChildElements(gamesContainer);
 
   // use filter() to get a list of games that have met or exceeded their goal
-  const fundedGames = GAMES_JSON.filter((game) => game.pledged >= game.goal);
+  const fundedGames = GAMES_JSON.filter((game) => { game.pledged >= game.goal });
 
   // use the function we previously created to add unfunded games to the DOM
   addGamesToPage(fundedGames);
@@ -147,6 +147,7 @@ const descriptionContainer = document.getElementById("description-container");
 const unfundedGamesCount = GAMES_JSON.filter(
   (game) => game.pledged < game.goal
 ).length;
+
 // create a string that explains the number of unfunded games using the ternary operator
 
 const displayStringContdition = unfundedGamesCount > 1 ? "games" : "game";
@@ -167,18 +168,20 @@ const firstGameContainer = document.getElementById("first-game");
 const secondGameContainer = document.getElementById("second-game");
 
 const sortedGames = GAMES_JSON.sort((item1, item2) => {
+  // desc order based on pledge value
   return item2.pledged - item1.pledged;
 });
 
 // use destructuring and the spread operator to grab the first and second games
-const [firstGame, secondGame] = sortedGames; // spread for what? 
+const [firstGame, secondGame, ...rest] = sortedGames;
+
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-const firstGameParag = document.createElement('p');
-firstGameParag.innerHTML = firstGame.name;
-firstGameContainer.appendChild(firstGameParag);
+const firstGamePTag = document.createElement('p');
+firstGamePTag.innerHTML = firstGame.name;
+firstGameContainer.appendChild(firstGamePTag);
 
 // do the same for the runner up item
-const secondGameParag = document.createElement('p');
-secondGameParag.innerHTML = secondGame.name;
-secondGameContainer.appendChild(secondGameParag);
+const secondGamePTag = document.createElement('p');
+secondGamePTag.innerHTML = secondGame.name;
+secondGameContainer.appendChild(secondGamePTag);
