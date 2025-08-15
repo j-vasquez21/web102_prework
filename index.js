@@ -104,6 +104,9 @@ function filterUnfundedOnly() {
 
   // use the function we previously created to add the unfunded games to the DOM
   addGamesToPage(unfundedGames);
+
+  // move back to the top of the games list when clicked and sorted
+  document.getElementById("games-container").scrollIntoView({ behavior: "smooth" });
 }
 
 // show only games that are fully funded
@@ -111,10 +114,13 @@ function filterFundedOnly() {
   deleteChildElements(gamesContainer);
 
   // use filter() to get a list of games that have met or exceeded their goal
-  const fundedGames = GAMES_JSON.filter((game) => { game.pledged >= game.goal });
+  const fundedGames = GAMES_JSON.filter((game) => game.pledged >= game.goal);
 
   // use the function we previously created to add unfunded games to the DOM
   addGamesToPage(fundedGames);
+
+  // move back to the top of the games list when clicked and sorted
+  document.getElementById("games-container").scrollIntoView({ behavior: "smooth" });
 }
 
 // show all games
@@ -123,6 +129,9 @@ function showAllGames() {
 
   // add all games from the JSON data to the DOM
   addGamesToPage(GAMES_JSON);
+
+  // move back to the top of the games list when clicked and sorted
+  document.getElementById("games-container").scrollIntoView({ behavior: "smooth" });
 }
 
 // select each button in the "Our Games" section
@@ -185,3 +194,8 @@ firstGameContainer.appendChild(firstGamePTag);
 const secondGamePTag = document.createElement('p');
 secondGamePTag.innerHTML = secondGame.name;
 secondGameContainer.appendChild(secondGamePTag);
+
+const ourGamesBtn = document.getElementById('our-games-btn');
+ourGamesBtn.addEventListener('click', () => {
+  document.getElementById("games-container").scrollIntoView({ behavior: "smooth" });
+});

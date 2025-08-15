@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Cabin';
     background-color: #758190;
+}
+
+button {
+    font-family: 'Cabin';
+    border: none;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+button:active {
+  background-color: #cccccc; 
+  box-shadow: 0 0 5px rgb(103, 103, 103);
 }
 
 #tentacles {
@@ -19,12 +41,17 @@ body {
     margin-top: -10px;
 }
 
+#our-games-btn {
+    position: absolute;
+    right: 0;
+}
+
 .stats-container {
     display: flex;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #ffffff;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -37,9 +64,11 @@ body {
 }
 
 #games-container {
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    scroll-margin-top: 165.578px;
 }
 
 .game-img {
@@ -66,13 +95,7 @@ body {
     text-align: center;
 }
 
-button {
-    font-family: 'Cabin';
-    border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
-}
+
 
 .stats-container {
     display: flex;
@@ -85,12 +108,9 @@ button {
     box-shadow: 0 0 30px lightblue;
 }
 
-button:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
-}
-
-button:active {
-  background-color: #cccccc; 
-  box-shadow: 0 0 5px rgb(103, 103, 103);
+#our-games-header {
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #758190; 
 }
