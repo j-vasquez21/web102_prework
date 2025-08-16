@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-![Demo](https://i.imgur.com/n3SQChC.gif)
+![Demo](https://i.imgur.com/APn8w3V.gif) \\
 GIF created with [Kap](https://getkap.co/)  
 
 ## Notes
