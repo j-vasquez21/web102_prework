@@ -25,7 +25,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-![Demo](https://i.imgur.com/APn8w3V.gif) \\
+<video autoplay loop muted playsinline>
+  <source src="https://i.imgur.com/kxwGX4R.mp4" type="video/mp4">
+</video>
 GIF created with [Kap](https://getkap.co/)  
 
 ## Notes
