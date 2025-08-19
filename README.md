@@ -29,7 +29,7 @@ Here's a walkthrough of implemented features:
 
 ## Notes
 
-One challenge that I faced was 
+A challenge that I faced when developing the application was figuring out how to implement the "scroll back to top" feature that I added into the filter buttons. When the user clicks any of the filters, the page will scroll back up to the beginning of the games container in addition to the game cards being filtered accordingly. To over come this, I had to search the web for examples on how this was implemented. After finding the logic, I opened up a new project to experiment with what I have learned. When I felt confident with my understanding of the logic, I implemented it on this project. Overall, I felt that the majority of the project was straightforward. 
 
 ## License
 
