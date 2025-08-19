@@ -160,7 +160,10 @@ const unfundedGamesCount = GAMES_JSON.filter(
 // create a string that explains the number of unfunded games using the ternary operator
 
 const displayStringContdition = unfundedGamesCount == 1 ? "game" : "games";
-const displayStr = `A total of $${totalAmountRaised.toLocaleString()} for ${GAMES_JSON.length} games. Currently, ${unfundedGamesCount} ${displayStringContdition} remain unfunded. We need your help to fund these amazing games!`;
+const displayStr = `A total of $${totalAmountRaised.toLocaleString()} for ${GAMES_JSON.length} games. Currently, ${unfundedGamesCount} ${displayStringContdition} remain unfunded.`;
+if (unfundedGamesCount > 0) {
+  displayStr += " We need your help to fund these amazing games!";
+}
 console.log(displayStr);
 
 // create a new DOM element containing the template string and append it to the description container
