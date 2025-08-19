@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-![demo](assets/app-demo.gif)
+![demo](assets/demo.gif)
 
 ## Notes
 
