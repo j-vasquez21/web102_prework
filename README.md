@@ -4,7 +4,7 @@ Submitted by: **Jerry Vasquez**
 
 **Sea Monster Crowdfunding** is a website for the company, Sea Monster Crowdfunding, that displays information about the games they have funded. The website displays stats such as the individual contributions, total amount raised, total number of games, and the top funded games. Following the stats, the user is able to see the list of all games that are currently being fund raised. The user is also provided filter options to see which games have acheived their funding goals and which games have not. 
 
-Time spent: **6** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
