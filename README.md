@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-[demo](https://i.imgur.com/RbFnKDH.gif)
+![demo](https://i.imgur.com/RbFnKDH.gif)
 
 ## Notes
 
