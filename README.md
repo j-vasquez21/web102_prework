@@ -25,10 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<video autoplay loop muted playsinline>
-  <source src="https://i.imgur.com/kxwGX4R.mp4" type="video/mp4">
-</video>
-GIF created with [Kap](https://getkap.co/)  
+![demo](http://i.imgur.com/RbFnKDH.gif)
 
 ## Notes
 
